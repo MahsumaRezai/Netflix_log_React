@@ -1,9 +1,10 @@
 
 import { Fragment } from 'react';
+import Adduser from './Componets/Adduser/Adduser';
 function App() {
   return (
     <Fragment>
-      <h1>hi</h1>
+      <Adduser />
 
 
 
