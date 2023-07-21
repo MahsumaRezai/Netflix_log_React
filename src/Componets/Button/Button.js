@@ -3,7 +3,7 @@ const Button = (props) => {
     return (
         <div>
             {props.children}
-            <button className={classes.btn}>Sign In</button>
+            <button className={classes.btn} type="checkbox">Sign In</button>
         </div>
 
     )

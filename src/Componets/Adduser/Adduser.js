@@ -19,19 +19,29 @@ const Adduser = (props) => {
                         <Button></Button>
                         <div className={classes.link}>
                             <div className={classes.links}>
-                                <button type="checkbox">mm</button>
-                                <span>Remember me</span>
+                                <button type="checkbox" className={classes.button}></button>
+                                <span className={classes.btn}>Remember me</span>
                             </div>
                             <div >
-                                <a href>Need help?</a>
+                                <a href className={classes.site}>Need help?</a>
                             </div>
-
-
                         </div>
-
                     </div>
 
                 </form>
+                <div className={classes.contenttext}>
+                    <div className={classes.para}>
+                        <span>New Netflix?</span>
+                        <a href>Sign up now</a>
+
+                    </div>
+                    <div className={classes.paragh}>
+                        <span>
+                            this page is protected by Google reCAPTCHA to <br></br> ensure you are not a bot.
+                        </span>
+                        <a href className={classes.lin}>Learn more</a>
+                    </div>
+                </div>
 
             </Card>
         </Fragment>
