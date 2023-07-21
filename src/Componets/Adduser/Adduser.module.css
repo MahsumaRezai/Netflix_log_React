@@ -3,6 +3,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding-left: 50px;
+    padding-right: 50px
 
 }
 .content {
@@ -14,7 +16,7 @@
 }
 .link{
     display: flex;
-    flex-direction: row;gap: 200px
+    flex-direction: row;gap: 100px
 }
 .links{
     display: flex;
@@ -33,12 +35,25 @@
   .input {
     font: inherit;
     display: block;
-    width: 70%;
-    border: 1px solid #ccc;
+    width: 100%;
+    border: none;
     padding: 0.15rem;
     margin-bottom: 0.5rem;
-    background: gray
+    background:gray;
+    color: white;
+    height: 50px;
+    border-radius: 5px;
+    
+
   }
-  
+  .text p {
+      
+      text-align: start;
+      padding-left: 60px;
+      font-family: sans-serif;
+      font-size: 30px;
+      padding-top: 20px;
+      padding-bottom: 20px
+  }
  
   
