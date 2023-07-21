@@ -1,0 +1,16 @@
+
+* {
+  box-sizing: border-box;
+  margin: 0%;
+  padding: 0;
+}
+
+
+body {
+  margin: 0;
+  background-image: url('./Componets/Image/net.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+
+}
