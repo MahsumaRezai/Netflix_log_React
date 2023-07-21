@@ -1,9 +1,10 @@
 import { Fragment } from "react";
+import classes from './Card.module.css'
 
 const Card = (props) => {
     return (
         <Fragment>
-            <div>
+            <div className={classes.card}>
                 {props.childern}
             </div>
         </Fragment>
