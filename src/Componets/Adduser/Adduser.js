@@ -1,20 +1,32 @@
 import { Fragment } from "react";
 import Card from "../Card/Card";
+import classes from "./Adduser.module.css";
 
 const Adduser = (props) => {
     return (
         <Fragment>
             <Card>
-            <form >
-                    <label htmlFor="username">Username</label>
-                    <input
-                       
-                    />
-                    <label htmlFor="age">Age (Years)</label>
-                    <input
-                        
-                    />
-                    <button type="submit">Add User</button>
+                <form className={classes.form}>
+                    <div className={classes.content}>
+                        <label>Sign In</label>
+                        <input placeholder="Email or Phone number" className={classes.input}/>
+                        <input placeholder="Password" className={classes.input} />
+                        <button>Sing In</button>
+                        <div className={classes.link}>
+                            <div className={classes.links}>
+
+                                <button type="checkbox">mm</button>
+                                <span>Remember me</span>
+                            </div>
+                            <div >
+                                <a href>Need help?</a>
+                            </div>
+
+
+                        </div>
+
+                    </div>
+
                 </form>
 
             </Card>

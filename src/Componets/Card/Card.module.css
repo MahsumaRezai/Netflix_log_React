@@ -1,10 +1,22 @@
-.card{
-    background: yellow;
-    box-shadow:  0 2px 8px  rgba(0, 0, 0, 0.26);
-    border-radius: 10px;
-    width: 30%;
-    height: 200px;
+.card {
+    padding: 1rem;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    border-radius: 14px;
+    background-color: white;
+    width: fit-content;
+    background-color: yellow;
     margin: auto;
-    margin-top: 300px
-
+    margin-top: 200px;
+    height: fit-content;
+  }
+  @media screen and(max-width:1024px){
+      .card{
+          width: 100%;
+      }
+  }
+  @media screen and(max-width:550px){
+    .card{
+        width: inherit;
+    }
 }
+  
