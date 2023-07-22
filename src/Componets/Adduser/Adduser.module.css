@@ -16,7 +16,7 @@
 }
 .link{
     display: flex;
-    flex-direction: row;gap: 120px
+    flex-direction: row;gap: 100px
 }
 .links{
     display: flex;
@@ -72,16 +72,19 @@
   }
   
   .input {
-    font: inherit;
-    display: block;
-    width: 100%;
+    
     border: none;
     padding: 0.15rem;
     margin-bottom: 0.5rem;
-    background:gray;
     color: white;
     height: 50px;
     border-radius: 5px;
+    width: 100%;
+   padding: 20px;
+   font-size: 15px;
+   background-color: rgb(59, 59, 59);
+   border-radius: 5px;
+   color: white;
     
 
   }
