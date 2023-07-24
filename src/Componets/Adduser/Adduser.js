@@ -1,21 +1,50 @@
-import { Fragment } from "react";
+import { Fragment, useState } from "react";
 import Card from "../Card/Card";
 import classes from "./Adduser.module.css";
 import Button from "../Button/Button";
-
 const Adduser = (props) => {
+    const [email, setEamil] = useState('');
+    const [password, setPassword] = useState('');
+    const [enterdEmail, setEnterdEmail] = useState(false);
+    const formHanlder = (event) => {
+        event.preventDefault();
+        if (email.trim().length === 0) {
+            setEnterdEmail(true);
+            return;
+        }
+        console.log(email, password)
+
+    }
+
+    const emailHanlder = (event) => {
+        setEamil(event.target.value);
+
+    }
+    const passwordHanlder = (event) => {
+        setPassword(event.target.value);
+
+    }
+
     return (
         <Fragment>
             <Card>
                 <div className={classes.text}>
                     <p>Sign In</p>
                 </div>
-                <form className={classes.form}>
+                <form className={classes.form} onSubmit={formHanlder}>
 
                     <div className={classes.content}>
+                        <div>
+                            <input placeholder="Email or Phone number" className={classes.input} onChange={emailHanlder} />
+                            {enterdEmail && <p className={classes.textVaild}>nnndndn</p>}
 
-                        <input placeholder="Email or Phone number" className={classes.input} />
-                        <input placeholder="Password" className={classes.input} />
+                        </div>
+                        <div>
+                            <input placeholder="Password" className={classes.input} onChange={passwordHanlder} />
+
+                        </div>
+
+
                         <Button></Button>
                         <div className={classes.link}>
                             <div className={classes.links}>

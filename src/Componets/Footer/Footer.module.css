@@ -22,15 +22,26 @@
     color: gray
 
 }
-@media screen and (max-width:700px){
+@media screen and (max-width:900px){
     .content{
-        flex-direction: column;
-        gap: 50px;
+        flex-direction: row;
+        gap: 30px;
         justify-content: center;
         align-items: center;
 
     }
 }
+@media screen and (max-width:700px){
+    .content{
+        flex-direction: row;
+        gap: 20px;
+        justify-content: center;
+        align-items: center;
+
+    }
+}
+
+
 .foo {
     display: flex;
     flex-direction: column;
