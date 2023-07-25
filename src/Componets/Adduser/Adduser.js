@@ -6,14 +6,19 @@ const Adduser = (props) => {
     const [email, setEamil] = useState('');
     const [password, setPassword] = useState('');
     const [enterdEmail, setEnterdEmail] = useState(false);
+    const [enterdPassword, setEntredPassword] = useState(false)
     const formHanlder = (event) => {
         event.preventDefault();
         if (email.trim().length === 0) {
             setEnterdEmail(true);
+
+        }
+        if (password.trim().length === 0) {
+            setEntredPassword(true);
             return;
         }
-        console.log(email, password)
-
+        setEamil('');
+        setEntredPassword('')
     }
 
     const emailHanlder = (event) => {
@@ -36,11 +41,12 @@ const Adduser = (props) => {
                     <div className={classes.content}>
                         <div>
                             <input placeholder="Email or Phone number" className={classes.input} onChange={emailHanlder} />
-                            {enterdEmail && <p className={classes.textVaild}>nnndndn</p>}
+                            {enterdEmail && <p className={classes.textVaild}>Please enter a valid email or phone number.</p>}
 
                         </div>
                         <div>
                             <input placeholder="Password" className={classes.input} onChange={passwordHanlder} />
+                            {enterdPassword && <p className={classes.textVaildPassword}>Your password must contain between 4 and 60<br></br> characters.</p>}
 
                         </div>
 
